@@ -1,0 +1,14 @@
+D:\University\TRPP\ТРПП\ConsoleApp1\bin\Debug\net8.0-windows\ConsoleApp1.exe
+D:\University\TRPP\ТРПП\ConsoleApp1\bin\Debug\net8.0-windows\ConsoleApp1.deps.json
+D:\University\TRPP\ТРПП\ConsoleApp1\bin\Debug\net8.0-windows\ConsoleApp1.runtimeconfig.json
+D:\University\TRPP\ТРПП\ConsoleApp1\bin\Debug\net8.0-windows\ConsoleApp1.dll
+D:\University\TRPP\ТРПП\ConsoleApp1\bin\Debug\net8.0-windows\ConsoleApp1.pdb
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ConsoleApp1.AssemblyInfoInputs.cache
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ConsoleApp1.AssemblyInfo.cs
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ConsoleApp1.dll
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\refint\ConsoleApp1.dll
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ConsoleApp1.pdb
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ConsoleApp1.genruntimeconfig.cache
+D:\University\TRPP\ТРПП\ConsoleApp1\obj\Debug\net8.0-windows\ref\ConsoleApp1.dll

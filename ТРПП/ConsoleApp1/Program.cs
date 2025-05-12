@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Threading;
-
+using System.Windows.Forms;
 namespace CalendarApp
 {
         public class Day
@@ -71,6 +72,9 @@ namespace CalendarApp
 
         static DateTime Now => fakeNow ?? DateTime.Now;
 
+        #if WINDOWS
+        [STAThread]
+        #endif
         static void Main()
         {
             LoadProfiles();
@@ -117,7 +121,6 @@ namespace CalendarApp
                 r.Triggered = true;
             }
         }
-
         static void ShowCalendar()
         {
             Console.Write("Год: "); int y = int.Parse(Console.ReadLine() ?? "");
@@ -154,6 +157,16 @@ namespace CalendarApp
             current.Notes.Add(new Note { Text = txt });
             Console.WriteLine("Заметка сохранена.");
         }
+        static void DelNote()
+        {
+            Console.Write("Введите номер заметки для удаления: ");
+            if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= current.Notes.Count)
+            {
+                current.Notes.RemoveAt(index - 1);
+                Console.WriteLine("Заметка удалена.");
+            }
+            else Console.WriteLine("Неверный номер заметки.");
+        }
 
         static void ShowNotes()
         {
@@ -161,7 +174,7 @@ namespace CalendarApp
             foreach (var note in current.Notes)
                 Console.WriteLine($"{note.Created:yyyy-MM-dd HH:mm} - {note.Text}");
         }
-
+        
         static void ManageProfiles()
         {
             Console.WriteLine("Профили:");
@@ -185,7 +198,7 @@ namespace CalendarApp
                 Console.WriteLine("Профили экспортированы в profiles_export.json");
             }
         }
-
+        
         static void EmulateTime()
         {
             Console.WriteLine($"Текущее время: {Now:yyyy-MM-dd HH:mm:ss}");
@@ -203,7 +216,24 @@ namespace CalendarApp
             }
             else Console.WriteLine("Неверный формат даты.");
         }
+        //Пока под вопросом. Диалоговое окно с проводником Windows
+        static string OpenWindowsSearch()
+        {
+            var openFileDialog = new OpenFileDialog
+            {
+                InitialDirectory = Directory.GetCurrentDirectory(),
+                Title = "Выберите файлы",
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+                Multiselect = false
+            };
 
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                return openFileDialog.FileName;
+            }
+            else
+                return string.Empty;
+        }
         static void LoadProfiles()
         {
             if (File.Exists("profiles_export.json"))
@@ -212,7 +242,6 @@ namespace CalendarApp
                 profiles = JsonSerializer.Deserialize<List<Profile>>(json) ?? new();
             }
         }
-
         static void SaveProfiles()
         {
             var json = JsonSerializer.Serialize(profiles);
@@ -220,3 +249,4 @@ namespace CalendarApp
         }
     }
 }
+
