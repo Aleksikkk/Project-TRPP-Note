@@ -41,26 +41,19 @@ namespace CalendarApp
         public IEnumerable<Day> IterateDays() { for (var cur = _start; cur <= _end; cur = cur.AddDays(1)) yield return new Day(cur.Year, cur.Month, cur.Day); }
     }
 
-    // Напоминание
-    public class Reminder
-    {
-        public DateTime At { get; set; }
-        public string Message { get; set; }
-        public bool Triggered { get; set; } = false;
-    }
-
     // Заметка
     public class Note
     {
-        public DateTime Created { get; } = DateTime.Now;
+        public DateTime At { get; set; } = DateTime.Now;
         public string Text { get; set; }
+        public bool Triggered { get; set; } = false;
     }
 
     // Профиль
     public class Profile
     {
         public string Name { get; set; }
-        public List<Reminder> Reminders { get; set; } = new();
+        public List<Note> Reminders { get; set; } = new();
         public List<Note> Notes { get; set; } = new();
     }
 
@@ -87,28 +80,69 @@ namespace CalendarApp
 
                 Console.WriteLine($"\nТекущий профиль: {current.Name}");
                 Console.WriteLine("1. Вывести календарь (месяц)");
-                Console.WriteLine("2. Добавить напоминание");
-                Console.WriteLine("3. Добавить заметку");
-                Console.WriteLine("4. Показать заметки");
-                Console.WriteLine("5. Управление профилями");
-                Console.WriteLine("6. Эмуляция времени");
+                Console.WriteLine("2. Работа с напоминаниями");
+                Console.WriteLine("3. Работа с заметками");
                 Console.WriteLine("7. Выход");
                 Console.Write("Выберите пункт: "); var opt = Console.ReadLine();
 
                 switch (opt)
                 {
                     case "1": ShowCalendar(); break;
-                    case "2": AddReminder(); break;
-                    case "3": AddNote(); break;
-                    case "4": ShowNotes(); break;
-                    case "5": ManageProfiles(); break;
-                    case "6": EmulateTime(); break;
+                    case "2": TestReminders(); break;
+                    case "3": TestNotesFunc(); break;
                     case "7": SaveProfiles(); return;
                     default: Console.WriteLine("Неверный выбор"); break;
                 }
             }
         }
-
+        static void TestReminders()
+        {
+            Console.WriteLine("1. Показать напоминалки\n2. Добавить напоминалку\n3. Удалить напоминалку");
+            string choose = Console.ReadLine();
+            if (choose == "1")
+            {
+                ShowNotes(current.Reminders);
+            }
+            if (choose == "2")
+            {
+                Console.Write("Дата и время (yyyy-MM-dd HH:mm): "); var str = Console.ReadLine();
+                Console.Write("Сообщение: "); var msg = Console.ReadLine();
+                AddReminder(str, msg);
+            }
+            if (choose == "3")
+            {
+                Console.WriteLine("Напишите индекс заметки для напоминалки");
+                int index = int.Parse(Console.ReadLine());
+                DelNote(index, current.Reminders);
+            }
+        }
+        static void TestNotesFunc()
+        {
+            Console.WriteLine("1. Показать заметки\n2. Добавить заметку\n3. Удалить заметку\n4. Изменить заметку");
+            string choose = Console.ReadLine();
+            if (choose == "1")
+                ShowNotes(current.Notes);
+            if (choose == "2")
+            {
+                Console.WriteLine("Напишите содержимое заметки");
+                var txt = Console.ReadLine();
+                AddNote(txt, current.Notes);
+            }
+            if (choose == "3")
+            {
+                Console.WriteLine("Напишите индекс заметки для удаления");
+                int index = int.Parse(Console.ReadLine());
+                DelNote(index, current.Notes);
+            }
+            if (choose == "4")
+            {
+                Console.WriteLine("Напишите индекс заметки для изменения");
+                int index = int.Parse(Console.ReadLine());
+                Console.WriteLine("Напишите новое содержимое заметки");
+                string txt = Console.ReadLine();
+                EditNote(current.Notes, txt, index);
+            }
+        }
         static void CheckReminders()
         {
             var now = Now;
@@ -117,7 +151,7 @@ namespace CalendarApp
             {
                 // Бипка(звуковой сигнал)
                 try { Console.Beep(800, 500); } catch { /* ничего */ }
-                Console.WriteLine($" НАПОМИНАНИЕ: [{r.At:yyyy-MM-dd HH:mm}] {r.Message}");
+                Console.WriteLine($" НАПОМИНАНИЕ: [{r.At:yyyy-MM-dd HH:mm}] {r.Text}");
                 r.Triggered = true;
             }
         }
@@ -139,40 +173,52 @@ namespace CalendarApp
             Console.WriteLine();
         }
 
-        static void AddReminder()
+        static void AddReminder(string str, string msg)
         {
-            Console.Write("Дата и время (yyyy-MM-dd HH:mm): "); var str = Console.ReadLine();
-            Console.Write("Сообщение: "); var msg = Console.ReadLine();
             if (DateTime.TryParseExact(str, "yyyy-MM-dd HH:mm", null, DateTimeStyles.None, out var dt))
             {
-                current.Reminders.Add(new Reminder { At = dt, Message = msg });
+                current.Reminders.Add(new Note { At = dt, Text = msg });
                 Console.WriteLine("Напоминание добавлено.");
             }
             else Console.WriteLine("Неверный формат даты.");
         }
-
-        static void AddNote()
+        static void AddNote(string txt, List<Note> Notes)
         {
-            Console.Write("Текст заметки: "); var txt = Console.ReadLine();
-            current.Notes.Add(new Note { Text = txt });
+            Notes.Add(new Note { Text = txt });
             Console.WriteLine("Заметка сохранена.");
         }
-        static void DelNote()
+        static void DelNote(int index, List<Note> Notes)
         {
-            Console.Write("Введите номер заметки для удаления: ");
-            if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= current.Notes.Count)
+
+            ShowNotes(Notes);
+            if (index > 0 && index <= Notes.Count)
             {
-                current.Notes.RemoveAt(index - 1);
-                Console.WriteLine("Заметка удалена.");
+                Notes.RemoveAt(index - 1);
+                Console.WriteLine("Удалено.");
             }
             else Console.WriteLine("Неверный номер заметки.");
+            ShowNotes(Notes);
+        }
+        static void EditNote(List<Note> Notes, string txt, int index)
+        {
+
+            if (index > 0 && index <= Notes.Count)
+            {
+                Note note = Notes[index];
+                note.Text = txt;
+                note.At = DateTime.Now;
+            }
         }
 
-        static void ShowNotes()
+        static void ShowNotes(List<Note> Notes)
         {
             Console.WriteLine("\nТекущие заметки:");
-            foreach (var note in current.Notes)
-                Console.WriteLine($"{note.Created:yyyy-MM-dd HH:mm} - {note.Text}");
+            var index = 0;
+            foreach (var note in Notes)
+            {
+                Console.WriteLine($"{index} {note.At:yyyy-MM-dd HH:mm} - {note.Text}");
+                index++;
+            }
         }
         
         static void ManageProfiles()

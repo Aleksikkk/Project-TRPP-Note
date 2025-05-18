@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\University\\TRPP\\\u0422\u0420\u041F\u041F\\",
+  "WorkspaceRootPath": "D:\\University\\TRPP\\Project-TRPP-Note\\\u0422\u0420\u041F\u041F\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DD8A7F8-C9F2-4513-A681-B63EBB32C774}|ConsoleApp1\\ConsoleApp1.csproj|d:\\university\\trpp\\\u0442\u0440\u043F\u043F\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DD8A7F8-C9F2-4513-A681-B63EBB32C774}|ConsoleApp1\\ConsoleApp1.csproj|d:\\university\\trpp\\project-trpp-note\\\u0442\u0440\u043F\u043F\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DD8A7F8-C9F2-4513-A681-B63EBB32C774}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DD8A7F8-C9F2-4513-A681-B63EBB32C774}|ConsoleApp1\\ConsoleApp1.csproj|d:\\university\\trpp\\\u0442\u0440\u043F\u043F\\consoleapp1\\consoleapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{5DD8A7F8-C9F2-4513-A681-B63EBB32C774}|ConsoleApp1\\ConsoleApp1.csproj|d:\\university\\trpp\\project-trpp-note\\\u0442\u0440\u043F\u043F\\consoleapp1\\consoleapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5DD8A7F8-C9F2-4513-A681-B63EBB32C774}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\consoleapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -34,21 +34,19 @@
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
               "ViewState": "AgIAAHkAAAAAAAAAAAAMwIwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-05-12T15:34:57.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T15:34:57.52Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConsoleApp1",
-              "DocumentMoniker": "D:\\University\\TRPP\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\ConsoleApp1.csproj",
+              "Title": "ConsoleApp1.csproj",
+              "DocumentMoniker": "D:\\University\\TRPP\\Project-TRPP-Note\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\ConsoleApp1.csproj",
               "RelativeDocumentMoniker": "ConsoleApp1\\ConsoleApp1.csproj",
-              "ToolTip": "D:\\University\\TRPP\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\ConsoleApp1.csproj",
+              "ToolTip": "D:\\University\\TRPP\\Project-TRPP-Note\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\ConsoleApp1.csproj",
               "RelativeToolTip": "ConsoleApp1\\ConsoleApp1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-12T15:07:34.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T15:07:34.627Z"
             },
             {
               "$type": "Document",
@@ -58,18 +56,17 @@
               "ToolTip": "C:\\Users\\vladi\\AppData\\Local\\Temp\\.vsdbgsrc\\2f087ff1b54ce741645ba1195020f63239c1146fb7e712124afca11956894d8a\\Program.cs",
               "ViewState": "AgIAANkAAAAAAAAAAAAAABUAAAARAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:16:17.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T13:16:17.715Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\University\\TRPP\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\Program.cs",
+              "DocumentMoniker": "D:\\University\\TRPP\\Project-TRPP-Note\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "D:\\University\\TRPP\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\Program.cs*",
-              "RelativeToolTip": "ConsoleApp1\\Program.cs*",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGoAAAAxAAAAAAAAAA==",
+              "ToolTip": "D:\\University\\TRPP\\Project-TRPP-Note\\\u0422\u0420\u041F\u041F\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAD4v70AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T16:37:45.915Z",
               "EditorCaption": ""

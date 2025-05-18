@@ -1,18 +1,1 @@
-[
-  {
-    "Name": "Default",
-    "Reminders": [
-      {
-        "At": "2025-12-12T05:10:00",
-        "Message": "\u043A\u0443\u043A\u0443",
-        "Triggered": true
-      }
-    ],
-    "Notes": []
-  },
-  {
-    "Name": "rer",
-    "Reminders": [],
-    "Notes": []
-  }
-]
+[{"Name":"Default","Reminders":[{"At":"2025-12-12T05:10:00","Text":null,"Triggered":true},{"At":"2021-02-25T16:52:00","Text":"\u043F\u0440\u0438\u0432)","Triggered":true}],"Notes":[{"At":"2025-05-18T19:21:51.6699958+03:00","Text":"hi","Triggered":false},{"At":"2025-05-18T19:21:51.6706347+03:00","Text":"1234321","Triggered":false}]},{"Name":"rer","Reminders":[],"Notes":[]}]

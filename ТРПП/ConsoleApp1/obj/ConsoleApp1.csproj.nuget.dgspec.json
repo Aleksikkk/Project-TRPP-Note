@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\University\\TRPP\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "D:\\University\\TRPP\\Project-TRPP-Note\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "D:\\University\\TRPP\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "D:\\University\\TRPP\\Project-TRPP-Note\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\University\\TRPP\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "D:\\University\\TRPP\\Project-TRPP-Note\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "D:\\University\\TRPP\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "D:\\University\\TRPP\\Project-TRPP-Note\\ТРПП\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-        "outputPath": "D:\\University\\TRPP\\ТРПП\\ConsoleApp1\\obj\\",
+        "outputPath": "D:\\University\\TRPP\\Project-TRPP-Note\\ТРПП\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
