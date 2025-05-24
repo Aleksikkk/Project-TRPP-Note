@@ -1,0 +1,17 @@
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\bin\Debug\net8.0-windows\ZametkiApp.exe
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\bin\Debug\net8.0-windows\ZametkiApp.deps.json
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\bin\Debug\net8.0-windows\ZametkiApp.runtimeconfig.json
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\bin\Debug\net8.0-windows\ZametkiApp.dll
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\bin\Debug\net8.0-windows\ZametkiApp.pdb
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\CalendarApp.MainForm.resources
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.csproj.GenerateResource.cache
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.AssemblyInfoInputs.cache
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.AssemblyInfo.cs
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.sourcelink.json
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.dll
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\refint\ZametkiApp.dll
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.pdb
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ZametkiApp.genruntimeconfig.cache
+C:\Users\Admin\desktop\Project-TRPP-Note\ТРПП\ZametkiApp\ZametkiApp\obj\Debug\net8.0-windows\ref\ZametkiApp.dll
